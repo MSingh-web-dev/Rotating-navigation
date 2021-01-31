@@ -23,7 +23,7 @@ body{
 .container.show-nav{
     transform: rotate(-22deg);
 }
-.container.show-nav + nav li{
+.container.show-nav ~ nav li{
     transform: translateX(0);
     transition: transform 0.4s linear 0.3s;
 }
@@ -40,8 +40,8 @@ body{
     position: relative;
     transition: transform 0.5s linear;
 }
-.container.show-nav .circle{
-    transform: rotate(-70deg);
+.container.show-nav + .circle-container{
+    transform: rotate(-90deg);
 }
 .circle button{
     cursor: pointer;
@@ -119,3 +119,4 @@ nav ul li + li + li{
     transform: translateX(-200%);
 
 }
+
